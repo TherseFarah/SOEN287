@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang = "en" >
+<html lang="en">
+
 <head>
     <title> Question 2 - Tables </title>
 </head>
+
 <body>
     <h1> Nested Tables </h1>
-    <table border = "border">
+    <table border="border">
         <tr>
-            <th> Header column 1 </th> 
+            <th> Header column 1 </th>
             <th> Header column 2 </th>
             <th> Header column 3 </th>
             <th> Header column 4 </th>
         </tr>
         <tr>
             <td> Row 2 - Item 1 </td>
-            <td> Row 2 - Item 2  </td>
-            <th rowspan = "2"> 
+            <td> Row 2 - Item 2 </td>
+            <th rowspan="2">
                 <br /><br />
                 Row 2: Nested Table 1
                 <br /><br />
-                <table border = "border">
+                <table border="border">
                     <tr>
                         <th>Row 1 Header</th>
                         <td> item </td>
@@ -34,14 +36,14 @@
                     </tr>
                 </table>
             </th>
-            <td> Row 2 - Item 4 <br /> A second line  </td>
-         </tr>
-         <tr>
+            <td> Row 2 - Item 4 <br /> A second line </td>
+        </tr>
+        <tr>
             <th>
                 <br /><br />
                 Row 3: Nested Table 2
                 <br /><br />
-                <table border = "border">
+                <table border="border">
                     <tr>
                         <th>Row 1 Header</th>
                         <td> item </td>
@@ -54,13 +56,14 @@
             </th>
             <td> Row 3 - Item 2 </td>
             <td rowspan="2"> Row 3 - Item 3</td>
-         </tr>
-         <tr>
-            <td> Row 4 - Item 1</td> 
+        </tr>
+        <tr>
+            <td> Row 4 - Item 1</td>
             <td> Row 4 - Item 2</td>
             <td> Row 4 - Item 3</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td colspan="4"> Row 5 - Lat row of outer table</td>
-         </tr>
+        </tr>
+    </table>
 </body>
