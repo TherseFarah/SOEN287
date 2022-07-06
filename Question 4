@@ -1,0 +1,114 @@
+<!DOCTYPE html">
+<html lang="en">
+
+<head>
+    <title> Question 4- Presentation </title>
+</head>
+
+<body style="background-color: rgb(255, 255, 198) ; font-weight:bold;">
+    <table>
+        <tr>
+            <td>
+                <h1>Music Lover's Survey</h1>
+            </td>
+            <td>
+                <a href="https://rivetedlit.com/wp-content/uploads/2017/01/For-Music-Lovers-624x342.jpg">
+                    <img src="https://rivetedlit.com/wp-content/uploads/2017/01/For-Music-Lovers-624x342.jpg"
+                        alt="Music Notes" width="600" height="200">
+            </td>
+            </a>
+        </tr>
+    </table>
+    <br /><br />
+    <fieldset style=" background-color:rgb(200, 200, 255); border: solid blue;font-weight:bold; ">
+        <legend style="color: blue;">Music Lover's Personal Information</legend>
+
+        <form action="">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" size="30">
+            <br><br>
+            <label for="lname">Family name:</label>
+            <input type="text" id="lname" name="lname" size="30">
+        </form>
+        <form>
+            Gender :
+            <input type="radio" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label for="Female">Female</label>
+        </form>
+        <form action="">
+            What age category are you from?
+            <select name="age">
+                <option> Less than 18 </option>
+                <option> 18-28 </option>
+                <option> 29-38 </option>
+                <option> 39-59 </option>
+                <option> More than 60 </option>
+            </select>
+        </form>
+        <form action="">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" size="30">
+        </form>
+    </fieldset>
+    <br><br>
+    <fieldset style=" background-color:rgb(255, 210, 210); border: solid red; font-weight:bold;">
+        <legend style="color: red;">Survey Questions</legend>
+        <form action="">
+            Which type of music do you listen to? (Pick as many as apply)
+            <br>
+            <input type="checkbox" name="pop" value="POP">
+            <label for="POP"> POP</label>
+            <input type="checkbox" name="Kpop" value="K-POP">
+            <label for="K-POP">K-POP</label>
+            <input type="checkbox" name="jazz" value="Jazz">
+            <label for="Jazz">Jazz</label>
+            <input type="checkbox" name="classical" value="Classical">
+            <label for="Classical">Classical</label>
+            <input type="checkbox" name="r&b" value="R&B">
+            <label for="R&B">R&B</label>
+            <br>
+            <input type="checkbox" name="alternative" value="Alternative">
+            <label for="Alternative">Alternative</label>
+            <input type="checkbox" name="blues" value="Blues">
+            <label for="Blues">Blues</label>
+            <input type="checkbox" name="rock" value="Rock">
+            <label for="Rock">Rock</label>
+            <input type="checkbox" name="soul" value="Soul">
+            <label for="Soul">Soul</label>
+        </form>
+
+        <br><br>
+        <form action="">
+            List your 3 favorite artist/bands: 
+            <br>
+            <label for="artist1"></label>
+            <input type="text" name="artist1" size="30">
+            <label for="artist2"></label>
+            <input type="text" name="artist2" size="30">
+            <label for="artist2"></label>
+            <input type="text" name="artist2" size="30">
+        </form>
+
+        <br>
+        <form action="">
+            If you were to win tickets which show would you like 2 tickets to?
+            <br>
+            <input type="radio" name="concert" value="Justin Bieber">
+            <label for="Justin Bieber">Justin Bieber</label>
+            <input type="radio" name="concert" value="Dua Lipa">
+            <label for="Dua Lipa">Dua Lipa</label>
+            <input type="radio" name="concert" value="BTS">
+            <label for="BTS">BTS</label>
+        </form>
+    </fieldset>
+
+    <br><br>
+    Thank you for taking the time to fill out our survey!
+    <form action="">
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+</body>
