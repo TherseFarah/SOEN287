@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question2</title>
+</head>
+<body>
+    <h1>Vertical Navigation Bar</h1>
+    <p>"Home" is the current page. There are four menu items</p>
+    <link rel="stylesheet" href="styles.css">
+    <div>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>          
+      </div>
+</body>
+</html>
+
+
