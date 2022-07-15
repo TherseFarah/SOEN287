@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question3</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <div id="first">
+        <span class="red">This is a DIV Container</span>
+    </div>
+    <div id="second">
+        DIVs are a powerful way to modularize presentation
+    </div>
+</body>
+</html>
+
+
