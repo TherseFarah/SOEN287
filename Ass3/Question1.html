@@ -28,26 +28,44 @@
 			return answer;
 		}
 		function findMaxNumber() {
-				return Math.max.apply(null, this);
+			var args = Array.prototype.slice.call(arguments);
+			let max = Math.max.apply(null, args);
+			return max;
+		}
+		function getDigits(word) {
+			let temp = '';
+			for (let i = 0; i < word.length; i++) {
+				let ch = word[i];
+				if (!isNaN(String(ch) * 1))
+					temp += ch;
+			}
+			return temp;
+		}
+		function reverseString(word){
+			let temp='';
+			for(let i=word.length-1; i>=0;i--){
+				temp+=word[i];
+			}
+			return temp;
 		}
 	</script>
 </head>
 
 <body>
-	<h2>addNumbers</h2>
+	<h2 style="color: rgb(98, 199, 98);">addNumbers</h2>
 	<p>numbers = [2,3,4,5,6,7,8,9,10]</p>
 	<p>Please note that if you change the array and add a string for example it will just ignore the element and move on
 		to the next one instead of halting</p>
 	<button onclick="document.getElementById('addNumbers').innerHTML = addNumbers([2,3,4,5,6,7,8,9,10])">Click for
 		Sum</button>
 	<p id="addNumbers"></p>
-
-	<h2>getCurrentDate</h2>
+		<br>
+	<h2 style="color: rgb(98, 199, 98);">getCurrentDate</h2>
 	<button type="button" onclick="document.getElementById('demo').innerHTML = getCurrentDate()">Click me to display
 		Date.</button>
 	<p id="demo"></p>
-
-	<h2>arrayToString</h2>
+		<br>
+	<h2 style="color: rgb(98, 199, 98);">arrayToString</h2>
 	<p>array=['Array', 'T', 'o', 'String', 'Will', 'Work']</p>
 	<p>Please note that if you change the array and add a number for example it will just ignore the element and move on
 		to the next one instead of halting</p>
@@ -55,12 +73,22 @@
 		onclick="document.getElementById('arrayToString').innerHTML = arrayToString(['Array', 'T', 'o', 'String', 'Will', 'Work'])">Click
 		for Concatination</button>
 	<p id="arrayToString"></p>
-
-	
-	<h2>findMaxNumber</h2>
+		<br>
+	<h2 style="color: rgb(98, 199, 98);">findMaxNumber</h2>
 	<p>array=[2,3,4,5,6,7,8,9,10]</p>
-	<button
-		onclick="document.getElementById('findMaxNumber').innerHTML = findMaxNumber()">Click
-		for Max</button>
+	<button onclick="document.getElementById('findMaxNumber').innerHTML = findMaxNumber(2,3,4,5,6,7,8,9,10)">Click
+		for max</button>
 	<p id="findMaxNumber"></p>
+		<br>
+	<h2 style="color: rgb(98, 199, 98);">getDigits</h2>
+	<p>SOEN287ISAMAZ1N</p>
+	<button onclick="document.getElementById('getDigits').innerHTML = getDigits('SOEN287ISAMAZ1N')">Click
+		for digit string</button>
+	<p id="getDigits"></p>
+		<br>
+	<h2 style="color: rgb(98, 199, 98);">reverseString</h2>
+	<p>ThereseFarah</p>
+	<button onclick="document.getElementById('reverseString').innerHTML = reverseString('ThereseFarah')">Click
+		for reverse string</button>
+	<p id="reverseString"></p>
 </body>
