@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Exercise 3</title>
+</head>
+
+<body>
+    <p><strong>User Information:</strong></p>
+    <div id="content"></div>
+
+</body>
+
+<script>
+    function getUserInfo() {
+        let name = prompt("What is your full name?");
+        let age = prompt("How old are you?");
+        var result = document.createElement("text");
+        result.setAttribute("id", "content");
+        result.innerHTML = "Hi, my name is " + name + " and I’m " + age + " years old.";
+        document.getElementById("content").appendChild(result);
+    }
+    getUserInfo();
+</script>
+
+</html>
