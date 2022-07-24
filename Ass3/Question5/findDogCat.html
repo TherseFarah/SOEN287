@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Question 3</title>
+    <table style="margin-left: auto; margin-right: auto;">
+        <td>
+            <h1>PET ME! Adoption</h1>
+        </td>
+        <td>
+            <a href="home.html">
+                <img src="https://www.cdc.gov/healthypets/images/covid/dog-and-cat.jpg?_=46111" alt="Music Notes"
+                    width="600" height="200">
+            </a>
+
+        </td>
+    </table>
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <div id="wrapper">
+        <div class="topnav" id="first">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="BrowseAvailablePets.html">Browse Available Pets</a></li>
+                <li><a class="active" href="findDogCat.html">Find a dog/cat</a></li>
+                <li><a href="DogCare.html">Dog Care</a></li>
+                <li><a href="CatCare.html">Cat Care</a></li>
+                <li><a href="Giveaway.html">Have a pet to give away</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="second" class="Content">
+            <header id='current-time'></header>
+            <form name="myForm" onsubmit="return validateForm()" action="/action_page.php" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" size="30">
+                    <br><br>
+                    <label for="lname">Family name:</label>
+                    <input type="text" id="lname" name="lname" size="30">
+                    <br><br>
+                    Gender :
+                    <input type="radio" id="gender" name="Hgender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Hgender" value="Female">
+                    <label for="female">Female</label>
+                    <br><br>
+                    What age category are you from?
+                    <select id="hAge" name="hAge">
+                        <option> Less than 18 </option>
+                        <option> 18-28 </option>
+                        <option> 29-38 </option>
+                        <option> 39-59 </option>
+                        <option> More than 60 </option>
+                    </select>
+                    <br><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" size="30">
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Survey Questions</legend>
+                    <p>Select an animal</p>
+                    <input type="radio" name="Animal" value="Dog">
+                    <label for="Dog">Dog</label><br>
+                    <input type="radio" name="Animal" value="Cat">
+                    <label for="Cat">Cat</label><br>
+                    <input type="radio" id="Doesn't Matter" name="Animal" value="Doesnt_Matter">
+                    <label for="Doesn't Matter">Doesn't Matter</label>
+                    <br><br>
+                    What age would you like your animal to be?
+                    <select id="age" name="age">
+                        <option> Newborn </option>
+                        <option> 1-2 </option>
+                        <option> 3-5 </option>
+                        <option> 7 or more </option>
+                        <option> Doesn't matter </option>
+                    </select>
+                    <br><br>
+                    Gender of the animal:
+                    <input type="radio" id="Amale" name="AGender" value="AMale">
+                    <label for="Amale">Male</label>
+                    <input type="radio" id="Afemale" name="AGender" value="AFemale">
+                    <label for="Afemale">Female</label>
+                    <input type="radio" id="GDoesn't Matter" name="AGender" value="GDoesnt_Matter">
+                    <label for="GDoesn't Matter">Doesn't Matter</label>
+                    <br><br>
+                    Do you expect your animal to be extrovert?
+                    <input type="radio" id="Yes" name="extrovert?" value="Yes">
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="No" name="extrovert?" value="No">
+                    <label for="No">No</label>
+                    <input type="radio" id="EDoesn't Matter" name="extrovert?" value="EDoesnt_Matter">
+                    <label for="EDoesn't Matter">Doesn't Matter</label>
+                    <br><br>
+                    Which breed of dogs have u peted and connected with? (Pick as many as apply)
+                    <br>
+                    <input type="checkbox" id="Husky" name="breeds" value="Husky">
+                    <label for="Husky"> Husky</label>
+                    <input type="checkbox" id="Golden Retriver" name="breeds" value="Golden Retriver">
+                    <label for="Golden Retriver">Golden Retriver</label>
+                    <input type="checkbox" id="German Sheppard" name="breeds" value="German Sheppard">
+                    <label for="German Sheppard">German Sheppard</label>
+                    <input type="checkbox" id="Pug" name="breeds" value="Pug">
+                    <label for="Pug">Pug</label>
+                    <input type="checkbox" id="Corgi" name="breeds" value="Corgi">
+                    <label for="Corgi">Corgi</label>
+                    <br>
+                    <input type="checkbox" id="Bull dog" name="breeds" value="Bull dog">
+                    <label for="Bull dog">Bull dog</label>
+                    <input type="checkbox" id="Pomerian" name="breeds" value="Pomerian">
+                    <label for="Pomerian">Pomerian</label>
+
+                    <br><br>
+                    List your 3 favorite breeds:
+                    <br>
+                    <label for="breed1"></label>
+                    <input type="text" id="breed1" name="breed1" size="30">
+                    <label for="breed2"></label>
+                    <input type="text" id="breed2" name="breed2" size="30">
+                    <label for="breed3"></label>
+                    <input type="text" id="breed3" name="breed3" size="30">
+
+                    <br><br>
+                    <p>Select a cat breed</p>
+                    <input type="radio" id="Siamese" name="CatBreed" value="Siamese">
+                    <label for="Siamese">Siamese</label><br>
+                    <input type="radio" id="Scottish Fold" name="CatBreed" value="Scottish Fold">
+                    <label for="Scottish Fold">Scottish Fold</label><br>
+                    <input type="radio" id="BDoesn't Matter" name="CatBreed" value="BDoesnt_Matter">
+                    <label for="BDoesnt_Matter">Doesn't Matter</label>
+                </fieldset>
+
+                <br><br>
+                Thank you for taking the time to fill out our survey!
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer id="footer">
+    <a href=".\privacy_policy.txt">Privacy Policy</a>
+</footer>
+
+</html>
